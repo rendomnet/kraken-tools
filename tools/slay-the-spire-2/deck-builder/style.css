@@ -55,9 +55,16 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  color-scheme: dark;
+}
+
 /* Embedded Kraken Mode: Fully transparent background & streamlined spacing */
+html.is-embedded,
+html.is-embedded body,
 body.is-embedded {
   background: transparent !important;
+  background-color: transparent !important;
   background-image: none !important;
   min-height: 0;
 }
