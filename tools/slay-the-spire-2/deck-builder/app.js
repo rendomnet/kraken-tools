@@ -26,11 +26,29 @@
   const loadCodeBtn = document.getElementById('loadCodeBtn');
   const exportCodeBox = document.getElementById('exportCodeBox');
 
-  // Check ?embed=kraken
+  // Check ?embed=kraken and ?accent=...
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.get('embed') === 'kraken' || urlParams.get('embed') === 'true') {
     document.body.classList.add('is-embedded');
   }
+
+  function applyAccent(color) {
+    if (!color) return;
+    document.documentElement.style.setProperty('--kraken-accent', color);
+    // Derive subtle glow
+    document.documentElement.style.setProperty('--kraken-accent-glow', `${color}35`);
+  }
+
+  const initialAccent = urlParams.get('accent');
+  if (initialAccent) {
+    applyAccent(decodeURIComponent(initialAccent));
+  }
+
+  window.addEventListener('message', (event) => {
+    if (event.data && event.data.type === 'KRAKEN_THEME' && event.data.accent) {
+      applyAccent(event.data.accent);
+    }
+  });
 
   // Load Cards Database
   async function loadCards() {
