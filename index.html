@@ -4,88 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kraken Tools Hub</title>
-  <meta name="description" content="Online community and official game tools catalog for Kraken Launcher.">
-  <link rel="stylesheet" href="tools/slay-the-spire-2/deck-builder/style.css">
-  <style>
-    .hub-hero {
-      text-align: center;
-      padding: 4rem 1rem 2rem;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-    .hub-title {
-      font-family: var(--font-title);
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 0.75rem;
-      background: linear-gradient(135deg, #fff 30%, #94a3b8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .hub-desc {
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    .tools-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.5rem;
-      max-width: 1080px;
-      margin: 2rem auto;
-      width: 100%;
-    }
-    .tool-tile {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      transition: all 0.25s ease;
-    }
-    .tool-tile:hover {
-      transform: translateY(-4px);
-      border-color: #38bdf8;
-      box-shadow: 0 12px 30px rgba(56, 189, 248, 0.2);
-    }
-    .tool-game-tag {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: #38bdf8;
-      font-weight: 700;
-    }
-    .tool-name {
-      font-family: var(--font-title);
-      font-size: 1.25rem;
-      font-weight: 700;
-    }
-  </style>
+  <meta name="description" content="Community and official game utilities for Kraken Launcher.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div class="app-container">
-    <div class="hub-hero">
-      <div class="brand-icon" style="margin: 0 auto 1.25rem; width: 48px; height: 48px; font-size: 1.5rem;">🐙</div>
-      <h1 class="hub-title">Kraken Tools Hub</h1>
-      <p class="hub-desc">
-        Lightweight, server-hosted web utilities that seamlessly integrate into Kraken Launcher's Game Details screen.
-      </p>
-    </div>
-
-    <div class="tools-grid">
-      <a href="tools/slay-the-spire-2/deck-builder/" class="tool-tile">
-        <span class="tool-game-tag">Slay the Spire 2</span>
-        <h2 class="tool-name">Deck & Synergy Planner</h2>
-        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
-          Interactive card library, character filters, energy curve calculations, and starter deck planner.
-        </p>
-        <span style="font-size: 0.8rem; color: #38bdf8; font-weight: 600; margin-top: auto;">Open Tool →</span>
-      </a>
-    </div>
-  </div>
+<body class="bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary">
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 </html>
