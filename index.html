@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kraken Tools Hub</title>
   <meta name="description" content="Community and official game utilities for Kraken Launcher.">
+  <meta name="color-scheme" content="dark">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    (function () {
+      try {
+        const inIframe = window.self !== window.top;
+        const isEmbedUrl = window.location.href.includes('embed=kraken') || window.location.href.includes('embed=true');
+        if (inIframe || isEmbedUrl) {
+          document.documentElement.classList.add('is-embedded');
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
-<body class="bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary">
+<body class="text-foreground antialiased selection:bg-primary/20 selection:text-primary">
   <div id="app"></div>
   <script type="module" src="/src/main.ts"></script>
 </body>
