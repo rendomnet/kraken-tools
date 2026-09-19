@@ -30,6 +30,8 @@ function checkIsEmbedded(): boolean {
 export function useKrakenEmbed() {
   const isEmbedded = ref(checkIsEmbedded());
   const accentColor = ref('#38bdf8');
+  const activeFont = ref('Rajdhani');
+  let resizeObserver: ResizeObserver | null = null;
 
   function applyAccent(color: string) {
     if (!color) return;
@@ -39,9 +41,41 @@ export function useKrakenEmbed() {
     document.documentElement.style.setProperty('--kraken-accent-glow', `${color}35`);
   }
 
+  function applyFont(font: string) {
+    if (!font) return;
+    const cleanFont = font.replace(/^["']|["']$/g, '').trim();
+    if (!cleanFont) return;
+    activeFont.value = cleanFont;
+    const fontValue = `"${cleanFont}", 'Outfit', sans-serif`;
+    document.documentElement.style.setProperty('--font-family-sans', fontValue);
+    if (document.body) {
+      document.body.style.fontFamily = fontValue;
+    }
+  }
+
+  function sendHeight() {
+    if (!isEmbedded.value) return;
+    try {
+      const height = Math.max(
+        document.documentElement.scrollHeight,
+        document.body ? document.body.scrollHeight : 0,
+        document.getElementById('app')?.scrollHeight || 0,
+      );
+      window.parent.postMessage({
+        type: 'KRAKEN_RESIZE',
+        height: Math.ceil(height),
+      }, '*');
+    } catch (e) {}
+  }
+
   function handleMessage(event: MessageEvent) {
-    if (event.data && event.data.type === 'KRAKEN_THEME' && event.data.accent) {
-      applyAccent(event.data.accent);
+    if (event.data && event.data.type === 'KRAKEN_THEME') {
+      if (event.data.accent) {
+        applyAccent(event.data.accent);
+      }
+      if (event.data.font) {
+        applyFont(event.data.font);
+      }
     }
   }
 
@@ -65,16 +99,44 @@ export function useKrakenEmbed() {
       applyAccent(decodeURIComponent(initialAccent));
     }
 
+    const initialFont = getUrlParam('font');
+    if (initialFont) {
+      applyFont(decodeURIComponent(initialFont));
+    }
+
     window.addEventListener('message', handleMessage);
+
+    if (isEmbedded.value && typeof ResizeObserver !== 'undefined') {
+      resizeObserver = new ResizeObserver(() => {
+        sendHeight();
+      });
+      if (document.body) {
+        resizeObserver.observe(document.body);
+      }
+      const appEl = document.getElementById('app');
+      if (appEl) {
+        resizeObserver.observe(appEl);
+      }
+      // Send initial height after paint
+      setTimeout(sendHeight, 50);
+      setTimeout(sendHeight, 300);
+    }
   });
 
   onUnmounted(() => {
     window.removeEventListener('message', handleMessage);
+    if (resizeObserver) {
+      resizeObserver.disconnect();
+      resizeObserver = null;
+    }
   });
 
   return {
     isEmbedded,
     accentColor,
+    activeFont,
     applyAccent,
+    applyFont,
+    sendHeight,
   };
 }

@@ -34,7 +34,7 @@ html:not(.is-embedded) {
 
 body {
   color: var(--foreground);
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-family-sans, 'Outfit', sans-serif);
   min-height: 100vh;
 }
 
@@ -51,6 +51,8 @@ body.is-embedded #app {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
+  overflow-y: hidden;
+  min-height: auto;
 }
 
 /* Custom Scrollbar */

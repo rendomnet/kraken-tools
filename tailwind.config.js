@@ -49,7 +49,7 @@ export default {
       },
       fontFamily: {
         title: ['Cinzel', 'serif'],
-        sans: ['Outfit', 'Inter', 'sans-serif'],
+        sans: ['var(--font-family-sans, Outfit)', 'Outfit', 'Inter', 'sans-serif'],
       },
     },
   },
