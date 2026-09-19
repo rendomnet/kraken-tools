@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slay the Spire 2 — Deck & Synergy Planner | Kraken Tools</title>
+  <meta name="description" content="Interactive deck builder and card synergy planner for Slay the Spire 2. Explore Ironclad, Silent, and Necrobinder cards.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Header (Collapses automatically in ?embed=kraken mode) -->
+    <header class="app-header" id="appHeader">
+      <div class="brand-badge">
+        <div class="brand-icon">⚔️</div>
+        <div>
+          <h1 class="brand-title">Slay the Spire 2</h1>
+          <div class="brand-subtitle">Deck & Synergy Planner • Kraken Tools</div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="btn" id="exportDeckBtn">
+          <span>📤</span>
+          <span>Share / Export</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Filter & Control Bar -->
+    <section class="control-bar" aria-label="Deck controls and filters">
+      <div class="class-filters" role="tablist">
+        <button class="class-tab active" data-class="all" role="tab">All Classes</button>
+        <button class="class-tab" data-class="ironclad" role="tab">🔥 Ironclad</button>
+        <button class="class-tab" data-class="silent" role="tab">🗡️ Silent</button>
+        <button class="class-tab" data-class="necrobinder" role="tab">💀 Necrobinder</button>
+      </div>
+
+      <div class="search-and-type">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search cards or keywords..." aria-label="Search cards">
+        </div>
+
+        <select id="typeSelect" class="type-select" aria-label="Card type filter">
+          <option value="all">All Types</option>
+          <option value="Attack">Attacks</option>
+          <option value="Skill">Skills</option>
+          <option value="Power">Powers</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Main Workspace: Card Grid + Sticky Deck Tray -->
+    <main class="workspace">
+      <!-- Card Catalog -->
+      <section class="cards-section" aria-label="Card catalog">
+        <div class="section-title-bar">
+          <span id="cardCount">Loading cards...</span>
+          <span>Click card to add to deck</span>
+        </div>
+        <div class="cards-grid" id="cardsGrid">
+          <!-- Cards rendered by app.js -->
+        </div>
+      </section>
+
+      <!-- Deck Drawer Panel -->
+      <aside class="deck-panel" aria-label="Current deck">
+        <div class="deck-header">
+          <div class="deck-title">
+            <span>Current Deck</span>
+            <span class="card-counter" id="totalDeckCount">0 Cards</span>
+          </div>
+          <button class="btn btn-danger" id="clearDeckBtn" title="Clear deck" style="padding: 0.35rem 0.6rem; font-size: 0.75rem;">Clear</button>
+        </div>
+
+        <!-- Deck Energy & Type Breakdown -->
+        <div class="deck-stats">
+          <div class="stat-item">
+            <span class="stat-val" id="avgEnergy">0</span>
+            <span class="stat-lbl">Avg Cost</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val" id="atkCount">0</span>
+            <span class="stat-lbl">Attacks</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val" id="sklCount">0</span>
+            <span class="stat-lbl">Skills</span>
+          </div>
+        </div>
+
+        <!-- Scrollable Deck List -->
+        <div class="deck-list" id="deckList">
+          <!-- Rendered by app.js -->
+        </div>
+
+        <!-- Bottom Actions -->
+        <div class="deck-actions">
+          <button class="btn btn-primary" id="copyDeckBtn" style="flex: 1;" onclick="document.getElementById('exportDeckBtn').click()">
+            <span>📋</span>
+            <span>Export Build</span>
+          </button>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <!-- Export / Import Modal -->
+  <div class="modal-overlay" id="exportModal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Deck Code</h2>
+        <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--text-secondary);">
+        Copy your deck code to share with others or paste an existing code to import a build.
+      </p>
+      <textarea id="exportCodeBox" class="export-code-box" placeholder="Paste deck code here..."></textarea>
+      <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
+        <button class="btn" id="loadCodeBtn">📥 Import Code</button>
+        <button class="btn btn-primary" id="copyCodeBtn">📋 Copy Code</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

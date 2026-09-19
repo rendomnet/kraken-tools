@@ -1,0 +1,29 @@
+{
+  "$schema": "https://cdn.jsdelivr.net/gh/rendomnet/kraken-tools@main/schema.json",
+  "version": 1,
+  "updatedAt": "2026-09-19T05:30:00Z",
+  "tools": {
+    "slay-the-spire-2": [
+      {
+        "id": "deck-builder",
+        "title": "Deck & Synergy Planner",
+        "description": "Interactive card library, archetype synergies, and starter deck planner for Slay the Spire 2.",
+        "url": "https://rendomnet.github.io/kraken-tools/tools/slay-the-spire-2/deck-builder/",
+        "icon": "cards",
+        "author": "Kraken Team",
+        "tags": ["deck-builder", "cards", "strategy"]
+      }
+    ],
+    "world-of-warcraft": [
+      {
+        "id": "talents",
+        "title": "Talent Calculator",
+        "description": "Class talent tree planner and build exporter.",
+        "url": "https://rendomnet.github.io/kraken-tools/tools/world-of-warcraft/talents/",
+        "icon": "sparkles",
+        "author": "Kraken Team",
+        "tags": ["talents", "calculator", "builds"]
+      }
+    ]
+  }
+}
