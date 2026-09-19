@@ -14,6 +14,17 @@
         "tags": ["deck-builder", "cards", "strategy"]
       }
     ],
+    "slay-the-spire": [
+      {
+        "id": "deck-builder",
+        "title": "Deck & Synergy Planner",
+        "description": "Interactive card library, archetype synergies, and starter deck planner for Slay the Spire 2.",
+        "url": "https://rendomnet.github.io/kraken-tools/tools/slay-the-spire-2/deck-builder/",
+        "icon": "cards",
+        "author": "Kraken Team",
+        "tags": ["deck-builder", "cards", "strategy"]
+      }
+    ],
     "world-of-warcraft": [
       {
         "id": "talents",
