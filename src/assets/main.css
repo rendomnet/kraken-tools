@@ -32,9 +32,23 @@ html:not(.is-embedded) {
   background-color: var(--background);
 }
 
+html,
+body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-sans, 'Outfit', sans-serif);
+}
+
 body {
   color: var(--foreground);
-  font-family: var(--font-family-sans, 'Outfit', sans-serif);
   min-height: 100vh;
 }
 
@@ -51,8 +65,18 @@ body.is-embedded #app {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
-  overflow-y: hidden;
-  min-height: auto;
+}
+
+/* Visually hide inner scrollbars without breaking height calculations or clipping */
+html.is-embedded {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html.is-embedded::-webkit-scrollbar,
+body.is-embedded::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 /* Custom Scrollbar */

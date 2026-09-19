@@ -17,6 +17,17 @@
         if (inIframe || isEmbedUrl) {
           document.documentElement.classList.add('is-embedded');
         }
+        let font = null;
+        const searchParams = new URLSearchParams(window.location.search);
+        font = searchParams.get('font');
+        if (!font && window.location.hash.includes('?')) {
+          const hashParams = new URLSearchParams(window.location.hash.slice(window.location.hash.indexOf('?')));
+          font = hashParams.get('font');
+        }
+        if (font) {
+          const clean = decodeURIComponent(font).replace(/^["']|["']$/g, '').trim();
+          document.documentElement.style.setProperty('--font-family-sans', `"${clean}", 'Outfit', sans-serif`);
+        }
       } catch (e) {}
     })();
   </script>

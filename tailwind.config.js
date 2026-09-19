@@ -48,7 +48,7 @@ export default {
         sm: '5px',
       },
       fontFamily: {
-        title: ['Cinzel', 'serif'],
+        title: ['var(--font-family-sans, Outfit)', 'Outfit', 'Cinzel', 'serif'],
         sans: ['var(--font-family-sans, Outfit)', 'Outfit', 'Inter', 'sans-serif'],
       },
     },

@@ -49,6 +49,7 @@ export function useKrakenEmbed() {
     const fontValue = `"${cleanFont}", 'Outfit', sans-serif`;
     document.documentElement.style.setProperty('--font-family-sans', fontValue);
     if (document.body) {
+      document.body.style.setProperty('--font-family-sans', fontValue);
       document.body.style.fontFamily = fontValue;
     }
   }
@@ -56,16 +57,29 @@ export function useKrakenEmbed() {
   function sendHeight() {
     if (!isEmbedded.value) return;
     try {
-      const height = Math.max(
+      const rootEl = document.querySelector('.deck-builder') || document.getElementById('app') || document.body;
+      const rectHeight = rootEl ? Math.ceil(rootEl.getBoundingClientRect().height) : 0;
+      const scrollH = Math.max(
         document.documentElement.scrollHeight,
         document.body ? document.body.scrollHeight : 0,
-        document.getElementById('app')?.scrollHeight || 0,
       );
-      window.parent.postMessage({
-        type: 'KRAKEN_RESIZE',
-        height: Math.ceil(height),
-      }, '*');
+      const offsetH = Math.max(
+        document.documentElement.offsetHeight,
+        document.body ? document.body.offsetHeight : 0,
+      );
+      const finalHeight = Math.max(rectHeight, scrollH, offsetH);
+      if (finalHeight > 0) {
+        window.parent.postMessage({
+          type: 'KRAKEN_RESIZE',
+          height: finalHeight + 60,
+        }, '*');
+      }
     } catch (e) {}
+  }
+
+  const eagerFont = getUrlParam('font');
+  if (eagerFont) {
+    applyFont(decodeURIComponent(eagerFont));
   }
 
   function handleMessage(event: MessageEvent) {
