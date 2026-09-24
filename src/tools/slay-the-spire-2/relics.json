@@ -1,0 +1,495 @@
+[
+  {
+    "id": "burning_blood",
+    "name": "Burning Blood",
+    "class": "ironclad",
+    "rarity": "Starter",
+    "icon": "🩸",
+    "description": "At the end of combat, heal 6 HP.",
+    "tags": ["Healing", "Sustain"]
+  },
+  {
+    "id": "black_blood",
+    "name": "Black Blood",
+    "class": "ironclad",
+    "rarity": "Boss",
+    "icon": "🖤",
+    "description": "Replaces Burning Blood. At the end of combat, heal 12 HP.",
+    "tags": ["Healing", "Sustain"]
+  },
+  {
+    "id": "red_skull",
+    "name": "Red Skull",
+    "class": "ironclad",
+    "rarity": "Common",
+    "icon": "💀",
+    "description": "While your HP is at or below 50%, you have 3 additional Strength.",
+    "tags": ["Strength", "Damage"]
+  },
+  {
+    "id": "champion_belt",
+    "name": "Champion Belt",
+    "class": "ironclad",
+    "rarity": "Rare",
+    "icon": "🥊",
+    "description": "Whenever you apply Vulnerable, also apply 1 Weak.",
+    "tags": ["Vulnerable", "Weak", "Control"]
+  },
+  {
+    "id": "charons_ashes",
+    "name": "Charon's Ashes",
+    "class": "ironclad",
+    "rarity": "Rare",
+    "icon": "🔥",
+    "description": "Whenever you Exhaust a card, deal 3 damage to ALL enemies.",
+    "tags": ["Exhaust", "AoE"]
+  },
+  {
+    "id": "brimstone",
+    "name": "Brimstone",
+    "class": "ironclad",
+    "rarity": "Shop",
+    "icon": "🌋",
+    "description": "At the start of your turn, gain 2 Strength and ALL enemies gain 1 Strength.",
+    "tags": ["Strength", "Aggro"]
+  },
+  {
+    "id": "runic_cube",
+    "name": "Runic Cube",
+    "class": "ironclad",
+    "rarity": "Boss",
+    "icon": "🟥",
+    "description": "Whenever you lose HP, draw 1 card.",
+    "tags": ["Card Draw", "Self-Harm"]
+  },
+  {
+    "id": "magic_flower",
+    "name": "Magic Flower",
+    "class": "ironclad",
+    "rarity": "Rare",
+    "icon": "🌺",
+    "description": "Healing is 50% more effective during combat.",
+    "tags": ["Healing", "Reaper"]
+  },
+
+  {
+    "id": "ring_of_the_snake",
+    "name": "Ring of the Snake",
+    "class": "silent",
+    "rarity": "Starter",
+    "icon": "🐍",
+    "description": "At the start of each combat, draw 2 additional cards.",
+    "tags": ["Card Draw", "Turn 1"]
+  },
+  {
+    "id": "ring_of_the_serpent",
+    "name": "Ring of the Serpent",
+    "class": "silent",
+    "rarity": "Boss",
+    "icon": "🐉",
+    "description": "Replaces Ring of the Snake. At the start of your turn, draw 1 additional card.",
+    "tags": ["Card Draw", "Draw Engine"]
+  },
+  {
+    "id": "snecko_skull",
+    "name": "Snecko Skull",
+    "class": "silent",
+    "rarity": "Common",
+    "icon": "🐍",
+    "description": "Whenever you apply Poison, apply 1 additional Poison.",
+    "tags": ["Poison", "Scaling"]
+  },
+  {
+    "id": "wrist_blade",
+    "name": "Wrist Blade",
+    "class": "silent",
+    "rarity": "Boss",
+    "icon": "🗡️",
+    "description": "Attacks that cost 0 deal 4 additional damage.",
+    "tags": ["Shiv", "Zero Cost"]
+  },
+  {
+    "id": "the_specimen",
+    "name": "The Specimen",
+    "class": "silent",
+    "rarity": "Rare",
+    "icon": "🧪",
+    "description": "Whenever an enemy dies, transfer any Poison it has to a random enemy.",
+    "tags": ["Poison", "AoE"]
+  },
+  {
+    "id": "hovering_kite",
+    "name": "Hovering Kite",
+    "class": "silent",
+    "rarity": "Boss",
+    "icon": "🪁",
+    "description": "The first time you discard a card each turn, gain 1 Energy.",
+    "tags": ["Energy", "Discard"]
+  },
+  {
+    "id": "ninja_scroll",
+    "name": "Ninja Scroll",
+    "class": "silent",
+    "rarity": "Uncommon",
+    "icon": "📜",
+    "description": "Start each combat with 3 Shivs in hand.",
+    "tags": ["Shiv", "Turn 1"]
+  },
+  {
+    "id": "paper_krane",
+    "name": "Paper Krane",
+    "class": "silent",
+    "rarity": "Uncommon",
+    "icon": "🦢",
+    "description": "Enemies with Weak deal 40% less damage instead of 25%.",
+    "tags": ["Weak", "Damage Reduction"]
+  },
+
+  {
+    "id": "binding_talisman",
+    "name": "Binding Talisman",
+    "class": "necrobinder",
+    "rarity": "Starter",
+    "icon": "🧿",
+    "description": "Whenever an enemy dies, reap 1 Soul and gain 3 Block.",
+    "tags": ["Soul", "Block"]
+  },
+  {
+    "id": "tomb_dust",
+    "name": "Tomb Dust",
+    "class": "necrobinder",
+    "rarity": "Common",
+    "icon": "🏺",
+    "description": "At combat start, channel 2 Souls into your spirit pool.",
+    "tags": ["Soul", "Turn 1"]
+  },
+  {
+    "id": "soul_phylactery",
+    "name": "Soul Phylactery",
+    "class": "necrobinder",
+    "rarity": "Boss",
+    "icon": "💎",
+    "description": "Replaces Binding Talisman. Gain 1 Energy at start of turn. Whenever an enemy dies, reap 2 Souls.",
+    "tags": ["Energy", "Soul"]
+  },
+  {
+    "id": "ossified_heart",
+    "name": "Ossified Heart",
+    "class": "necrobinder",
+    "rarity": "Rare",
+    "icon": "🫀",
+    "description": "When taking unblocked damage, consume 1 Soul to negate up to 10 damage.",
+    "tags": ["Damage Mitigation", "Soul"]
+  },
+  {
+    "id": "corpse_lantern",
+    "name": "Corpse Lantern",
+    "class": "necrobinder",
+    "rarity": "Uncommon",
+    "icon": "🏮",
+    "description": "Whenever you summon a Minion or Totem, it gains 4 temporary Block.",
+    "tags": ["Minion", "Block"]
+  },
+
+  {
+    "id": "akabeko",
+    "name": "Akabeko",
+    "class": "all",
+    "rarity": "Common",
+    "icon": "🐂",
+    "description": "Your first attack in each combat deals 8 additional damage.",
+    "tags": ["Burst", "Turn 1"]
+  },
+  {
+    "id": "anchor",
+    "name": "Anchor",
+    "class": "all",
+    "rarity": "Common",
+    "icon": "⚓",
+    "description": "Start each combat with 10 Block.",
+    "tags": ["Block", "Turn 1"]
+  },
+  {
+    "id": "bag_of_marbles",
+    "name": "Bag of Marbles",
+    "class": "all",
+    "rarity": "Common",
+    "icon": "🔮",
+    "description": "At the start of combat, apply 1 Vulnerable to ALL enemies.",
+    "tags": ["Vulnerable", "Turn 1"]
+  },
+  {
+    "id": "blood_vial",
+    "name": "Blood Vial",
+    "class": "all",
+    "rarity": "Common",
+    "icon": "🧪",
+    "description": "At the start of each combat, heal 2 HP.",
+    "tags": ["Sustain", "Healing"]
+  },
+  {
+    "id": "bronze_scales",
+    "name": "Bronze Scales",
+    "class": "all",
+    "rarity": "Common",
+    "icon": "⚖️",
+    "description": "Start each combat with 3 Thorns.",
+    "tags": ["Thorns", "Passive Damage"]
+  },
+  {
+    "id": "lantern",
+    "name": "Lantern",
+    "class": "all",
+    "rarity": "Common",
+    "icon": "🏮",
+    "description": "Gain 1 Energy on the first turn of each combat.",
+    "tags": ["Energy", "Turn 1"]
+  },
+  {
+    "id": "pen_nib",
+    "name": "Pen Nib",
+    "class": "all",
+    "rarity": "Common",
+    "icon": "🖋️",
+    "description": "Every 10th Attack you play deals double damage.",
+    "tags": ["Burst", "Damage Multiplier"]
+  },
+  {
+    "id": "vajra",
+    "name": "Vajra",
+    "class": "all",
+    "rarity": "Common",
+    "icon": "⚡",
+    "description": "At the start of each combat, gain 1 Strength.",
+    "tags": ["Strength", "Damage"]
+  },
+  {
+    "id": "orichalcum",
+    "name": "Orichalcum",
+    "class": "all",
+    "rarity": "Common",
+    "icon": "🪙",
+    "description": "If you end your turn without Block, gain 6 Block.",
+    "tags": ["Block", "Passive Defense"]
+  },
+
+  {
+    "id": "blue_candle",
+    "name": "Blue Candle",
+    "class": "all",
+    "rarity": "Uncommon",
+    "icon": "🕯️",
+    "description": "Curse cards can now be played. Playing a Curse card exhausts it and costs 1 HP.",
+    "tags": ["Curse", "Exhaust"]
+  },
+  {
+    "id": "bottled_lightning",
+    "name": "Bottled Lightning",
+    "class": "all",
+    "rarity": "Uncommon",
+    "icon": "⚡",
+    "description": "Upon pickup, choose a Skill card. Start each combat with this card in your hand.",
+    "tags": ["Setup", "Consistency"]
+  },
+  {
+    "id": "bottled_tornado",
+    "name": "Bottled Tornado",
+    "class": "all",
+    "rarity": "Uncommon",
+    "icon": "🌪️",
+    "description": "Upon pickup, choose a Power card. Start each combat with this card in your hand.",
+    "tags": ["Setup", "Consistency"]
+  },
+  {
+    "id": "meat_on_the_bone",
+    "name": "Meat on the Bone",
+    "class": "all",
+    "rarity": "Uncommon",
+    "icon": "🍖",
+    "description": "If your HP is at or below 50% at the end of combat, heal 12 HP.",
+    "tags": ["Healing", "Sustain"]
+  },
+  {
+    "id": "paper_phrog",
+    "name": "Paper Phrog",
+    "class": "all",
+    "rarity": "Uncommon",
+    "icon": "🐸",
+    "description": "Enemies with Vulnerable take 75% more damage instead of 50%.",
+    "tags": ["Vulnerable", "Damage Multiplier"]
+  },
+  {
+    "id": "shuriken",
+    "name": "Shuriken",
+    "class": "all",
+    "rarity": "Uncommon",
+    "icon": "⭐",
+    "description": "Every time you play 3 Attacks in a single turn, gain 1 Strength.",
+    "tags": ["Strength", "Multi-attack"]
+  },
+  {
+    "id": "kunai",
+    "name": "Kunai",
+    "class": "all",
+    "rarity": "Uncommon",
+    "icon": "🗡️",
+    "description": "Every time you play 3 Attacks in a single turn, gain 1 Dexterity.",
+    "tags": ["Dexterity", "Multi-attack"]
+  },
+  {
+    "id": "gremlin_horn",
+    "name": "Gremlin Horn",
+    "class": "all",
+    "rarity": "Uncommon",
+    "icon": "📯",
+    "description": "Whenever an enemy dies, gain 1 Energy and draw 1 card.",
+    "tags": ["Energy", "Card Draw", "AoE"]
+  },
+
+  {
+    "id": "dead_branch",
+    "name": "Dead Branch",
+    "class": "all",
+    "rarity": "Rare",
+    "icon": "🌿",
+    "description": "Whenever you Exhaust a card, add a random card to your hand.",
+    "tags": ["Exhaust", "Card Generation"]
+  },
+  {
+    "id": "ice_cream",
+    "name": "Ice Cream",
+    "class": "all",
+    "rarity": "Rare",
+    "icon": "🍦",
+    "description": "Energy is now conserved between turns.",
+    "tags": ["Energy", "Hoarding"]
+  },
+  {
+    "id": "incense_burner",
+    "name": "Incense Burner",
+    "class": "all",
+    "rarity": "Rare",
+    "icon": "💨",
+    "description": "Every 6 turns, gain 1 Intangible.",
+    "tags": ["Intangible", "Defense"]
+  },
+  {
+    "id": "calipers",
+    "name": "Calipers",
+    "class": "all",
+    "rarity": "Rare",
+    "icon": "📐",
+    "description": "At the start of your turn, lose 15 Block rather than all of your Block.",
+    "tags": ["Block", "Retention"]
+  },
+  {
+    "id": "tungsten_rod",
+    "name": "Tungsten Rod",
+    "class": "all",
+    "rarity": "Rare",
+    "icon": "🔩",
+    "description": "Whenever you would lose HP, lose 1 less HP.",
+    "tags": ["Damage Mitigation", "Beat of Death"]
+  },
+  {
+    "id": "unceasing_top",
+    "name": "Unceasing Top",
+    "class": "all",
+    "rarity": "Rare",
+    "icon": "🪀",
+    "description": "Whenever you have no cards in hand during your turn, draw a card.",
+    "tags": ["Card Draw", "Infinite"]
+  },
+
+  {
+    "id": "coffee_dripper",
+    "name": "Coffee Dripper",
+    "class": "all",
+    "rarity": "Boss",
+    "icon": "☕",
+    "description": "Gain 1 Energy at the start of each turn. You can no longer Rest at Rest Sites.",
+    "tags": ["Energy", "Downside"]
+  },
+  {
+    "id": "cursed_key",
+    "name": "Cursed Key",
+    "class": "all",
+    "rarity": "Boss",
+    "icon": "🗝️",
+    "description": "Gain 1 Energy at the start of each turn. Whenever you open a non-boss chest, obtain a Curse.",
+    "tags": ["Energy", "Curse"]
+  },
+  {
+    "id": "fusion_hammer",
+    "name": "Fusion Hammer",
+    "class": "all",
+    "rarity": "Boss",
+    "icon": "🔨",
+    "description": "Gain 1 Energy at the start of each turn. You can no longer Smith at Rest Sites.",
+    "tags": ["Energy", "Downside"]
+  },
+  {
+    "id": "pandoras_box",
+    "name": "Pandora's Box",
+    "class": "all",
+    "rarity": "Boss",
+    "icon": "📦",
+    "description": "Upon pickup, transform all Strikes and Defends into random cards.",
+    "tags": ["Transform", "Deck Cleanse"]
+  },
+  {
+    "id": "runic_pyramid",
+    "name": "Runic Pyramid",
+    "class": "all",
+    "rarity": "Boss",
+    "icon": "🔺",
+    "description": "At the end of your turn, you no longer discard your hand.",
+    "tags": ["Hand Retention", "Combos"]
+  },
+  {
+    "id": "snecko_eye",
+    "name": "Snecko Eye",
+    "class": "all",
+    "rarity": "Boss",
+    "icon": "👁️",
+    "description": "Draw 2 additional cards each turn. Start each combat Confused (card costs randomized 0-3).",
+    "tags": ["Card Draw", "High Cost"]
+  },
+  {
+    "id": "velvet_choker",
+    "name": "Velvet Choker",
+    "class": "all",
+    "rarity": "Boss",
+    "icon": "🧣",
+    "description": "Gain 1 Energy at the start of each turn. You cannot play more than 6 cards per turn.",
+    "tags": ["Energy", "Card Limit"]
+  },
+
+  {
+    "id": "orange_pellets",
+    "name": "Orange Pellets",
+    "class": "all",
+    "rarity": "Shop",
+    "icon": "💊",
+    "description": "Whenever you play a Power, Attack, and Skill in the same turn, remove all your debuffs.",
+    "tags": ["Cleanse", "Snecko/Biased"]
+  },
+  {
+    "id": "membership_card",
+    "name": "Membership Card",
+    "class": "all",
+    "rarity": "Shop",
+    "icon": "💳",
+    "description": "50% discount on all purchases at the merchant.",
+    "tags": ["Economy", "Gold"]
+  },
+  {
+    "id": "the_courier",
+    "name": "The Courier",
+    "class": "all",
+    "rarity": "Shop",
+    "icon": "📦",
+    "description": "The merchant now restocks inventory. Merchant items cost 20% less.",
+    "tags": ["Economy", "Gold"]
+  }
+]

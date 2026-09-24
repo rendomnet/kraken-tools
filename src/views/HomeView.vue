@@ -10,7 +10,7 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
       <RouterLink
         to="/slay-the-spire-2/deck-builder"
         class="group flex flex-col gap-2 p-5 rounded-xl border border-border bg-card/60 backdrop-blur-md hover:border-primary/60 hover:-translate-y-0.5 transition-all shadow-sm">
@@ -18,9 +18,35 @@
           <span class="text-[11px] font-bold uppercase tracking-widest text-primary">Slay the Spire 2</span>
           <span class="text-xs text-muted-foreground group-hover:text-primary transition-colors">Open →</span>
         </div>
-        <h2 class="font-title text-lg font-bold">Deck & Synergy Planner</h2>
+        <h2 class="font-title text-base font-bold">Deck & Synergy Planner</h2>
         <p class="text-xs text-muted-foreground leading-relaxed">
-          Explore Ironclad, Silent, and Necrobinder card synergies, manage starter builds, and export deck codes.
+          Explore Ironclad, Silent, and Necrobinder cards, archetype synergies, and export deck codes.
+        </p>
+      </RouterLink>
+
+      <RouterLink
+        to="/slay-the-spire-2/relic-finder"
+        class="group flex flex-col gap-2 p-5 rounded-xl border border-border bg-card/60 backdrop-blur-md hover:border-primary/60 hover:-translate-y-0.5 transition-all shadow-sm">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold uppercase tracking-widest text-amber-400">Slay the Spire 2</span>
+          <span class="text-xs text-muted-foreground group-hover:text-amber-400 transition-colors">Open →</span>
+        </div>
+        <h2 class="font-title text-base font-bold">Relic Quick-Finder</h2>
+        <p class="text-xs text-muted-foreground leading-relaxed">
+          Searchable relic compendium with character filters, rarity tiers, archetype synergy tags, and pin list.
+        </p>
+      </RouterLink>
+
+      <RouterLink
+        to="/slay-the-spire-2/boss-cheatsheet"
+        class="group flex flex-col gap-2 p-5 rounded-xl border border-border bg-card/60 backdrop-blur-md hover:border-primary/60 hover:-translate-y-0.5 transition-all shadow-sm">
+        <div class="flex items-center justify-between">
+          <span class="text-[11px] font-bold uppercase tracking-widest text-rose-400">Slay the Spire 2</span>
+          <span class="text-xs text-muted-foreground group-hover:text-rose-400 transition-colors">Open →</span>
+        </div>
+        <h2 class="font-title text-base font-bold">Boss & Elite Cheatsheet</h2>
+        <p class="text-xs text-muted-foreground leading-relaxed">
+          Act-by-act survival guide with boss/elite HP, dangerous passive reactions, turn patterns, and target tracking.
         </p>
       </RouterLink>
     </div>

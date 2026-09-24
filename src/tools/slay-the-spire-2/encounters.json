@@ -1,0 +1,202 @@
+[
+  {
+    "id": "gremlin_nob",
+    "name": "Gremlin Nob",
+    "act": 1,
+    "type": "Elite",
+    "icon": "👹",
+    "hp": "82-86",
+    "passives": "Enrage: Gains +2 (+3 on A18+) Strength whenever you play a Skill card.",
+    "turnPattern": "Turn 1: Bellow (Enrage buff). Turn 2: Skull Bash (8 dmg + 2 Vulnerable). Turn 3+: Rush (14-16 dmg, boosted by accumulated Strength).",
+    "tips": "DO NOT play defensive skills on turns 1-2 unless lethal is prevented. Draft aggressive frontloaded attacks early in Act 1 specifically to race him down."
+  },
+  {
+    "id": "lagavulin",
+    "name": "Lagavulin",
+    "act": 1,
+    "type": "Elite",
+    "icon": "🐚",
+    "hp": "109-111",
+    "passives": "Asleep: Starts with 8 Metallicize and stays asleep for 3 turns until attacked.",
+    "turnPattern": "Turn 1-3: Sleep (wakes immediately upon being damaged). Turn 4: Stunned/Waking. Turn 5-6: Heavy Attack (18-20 dmg). Turn 7: Siphon Soul (-1 Str, -1 Dex).",
+    "tips": "Do not rush waking it on turn 1. Use the 3 sleep turns to play powers, line up scaling, and wait for a heavy attack burst hand."
+  },
+  {
+    "id": "sentries",
+    "name": "3 Sentries",
+    "act": 1,
+    "type": "Elite",
+    "icon": "🗿",
+    "hp": "38-42 each",
+    "passives": "Dazed Cycle: Center sentry casts 2 (3 on A18+) Dazed on Turn 1; outer sentries attack for 9 (10). Roles invert each turn.",
+    "turnPattern": "Odd turns: Outer attack (9x2), Center dazes. Even turns: Outer daze, Center attacks (9).",
+    "tips": "Focus fire and burst down one of the outer sentries on turn 1-2. Eliminating one immediately cuts incoming pressure by 50%."
+  },
+  {
+    "id": "the_guardian",
+    "name": "The Guardian",
+    "act": 1,
+    "type": "Boss",
+    "icon": "🛡️",
+    "hp": "240-250",
+    "passives": "Defensive Mode: Shifts forms every time he takes 30-40 damage, immediately gaining 20 Block and Sharp Spikes (3-4 thorns on hit).",
+    "turnPattern": "Offensive: Charges fierce smashes (32-36 dmg). Defensive: Whirlwind multi-hits, rolls into spiked ball, then resets threshold.",
+    "tips": "Track your damage carefully. Trigger the defensive shift before his charged heavy hit, but avoid multi-hit attacks while Sharp Spikes is active."
+  },
+  {
+    "id": "hexaghost",
+    "name": "Hexaghost",
+    "act": 1,
+    "type": "Boss",
+    "icon": "👻",
+    "hp": "250-264",
+    "passives": "Divider: Turn 2 attack hits 6 times; total damage equals (Current Player HP / 12) + 1 per hit.",
+    "turnPattern": "Turn 1: Activates seals. Turn 2: Divider (6 hits scaling with your health!). Turns 3+: Inferno & Burns, ramping strength.",
+    "tips": "Entering this fight with lower HP actually reduces Divider damage. Stack heavy block or Weak for Turn 2, then burst him down before the second Inferno cycle."
+  },
+  {
+    "id": "slime_boss",
+    "name": "Slime Boss",
+    "act": 1,
+    "type": "Boss",
+    "icon": "🟢",
+    "hp": "140-150",
+    "passives": "Split: Cancels current action and splits into two Medium Slimes when HP drops below 50% (70-75 HP).",
+    "turnPattern": "Turn 1: Goop Spray (3 Slimed). Turn 2: Preparing Slam. Turn 3: Slam (35-38 dmg!). Splits immediately if brought below 50% HP.",
+    "tips": "Carefully chip him down close to 75 HP, then land your biggest attack to trigger the split with the lowest possible residual health on the spawns."
+  },
+
+  {
+    "id": "book_of_stabbing",
+    "name": "Book of Stabbing",
+    "act": 2,
+    "type": "Elite",
+    "icon": "📖",
+    "hp": "160-168",
+    "passives": "Painful Stabs: Shuffles Wounds into discard pile on hit. Multi-attack count increases by +1 each attack (2 -> 3 -> 4 -> 5...).",
+    "turnPattern": "Alternates between Single Heavy Stab and Multi-Stab (which scales attacks up rapidly every turn).",
+    "tips": "Requires immediate offensive burst. Disarm, Weak, and Bronze Scales shine here. You cannot out-stall this fight."
+  },
+  {
+    "id": "gremlin_leader",
+    "name": "Gremlin Leader",
+    "act": 2,
+    "type": "Elite",
+    "icon": "👑",
+    "hp": "140-148",
+    "passives": "Gremlin Minions: Commands minions with Encourage (+Str), Rally (+Block & summon), or attacks for 6x3.",
+    "turnPattern": "If minions are dead, high chance to Summon. If minions are alive, high chance to Encourage or Stab.",
+    "tips": "Keep the minion count low to force the Leader to waste turns summoning minions rather than buffing or attacking for heavy damage."
+  },
+  {
+    "id": "slavers",
+    "name": "Taskmaster & Slavers",
+    "act": 2,
+    "type": "Elite",
+    "icon": "⛓️",
+    "hp": "Blue: 46-50, Red: 46-50, Taskmaster: 54-60",
+    "passives": "Entangle (Red Slaver): Net inflicts Entangled, preventing you from playing Attack cards for 1 turn.",
+    "turnPattern": "Turn 1: Red applies Vulnerable, Taskmaster scours Wounds. Turn 2: Red nets (Entangle).",
+    "tips": "Kill the Red Slaver on turns 1-2 to prevent Entangle, then eliminate Taskmaster before Wounds flood your deck."
+  },
+  {
+    "id": "champ",
+    "name": "The Champ",
+    "act": 2,
+    "type": "Boss",
+    "icon": "🏆",
+    "hp": "420-440",
+    "passives": "Phase 2 Enrage: At 50% HP (210-220 HP), cleanses all debuffs, gains +Strength, and executes heavy Execute attack (10x2 -> 14x3).",
+    "turnPattern": "Phase 1: Taunt, Defensive Stance (Metallicize), Heavy Slash. Phase 2: Anger cleanse followed by devastating Execute.",
+    "tips": "Do not trigger his 50% threshold prematurely. Accumulate scaling (Strength/Poison/Powers), wait for a clean opening, then burst through the remaining 50%."
+  },
+  {
+    "id": "bronze_automaton",
+    "name": "Bronze Automaton",
+    "act": 2,
+    "type": "Boss",
+    "icon": "🤖",
+    "hp": "300-320",
+    "passives": "Hyperbeam: Turn 6 fires Hyperbeam for 45-52 damage, then stuns himself for 1 turn.",
+    "turnPattern": "Turn 1: Spawn 2 Bronze Orbs (steal your cards). Turn 2-5: Flail & Boost. Turn 6: Hyperbeam.",
+    "tips": "Save intangible, heavy block, or an Artifact/Buffer potion for Hyperbeam. Destroy the Bronze Orbs quickly to recover stolen key cards."
+  },
+  {
+    "id": "the_collector",
+    "name": "The Collector",
+    "act": 2,
+    "type": "Boss",
+    "icon": "🕯️",
+    "hp": "282-300",
+    "passives": "Mega Debuff: On turn 4 or 5, casts Mega Debuff applying 3 Vulnerable, 3 Frail, and 3 Weak.",
+    "turnPattern": "Turn 1: Summons 2 Torch Heads. Turn 2-3: Buffs minions or attacks. Turn 4: Mega Debuff (3 Vuln/Frail/Weak).",
+    "tips": "Use AoE damage to clear Torch Heads so Collector spends turns resummoning them rather than buffing strength."
+  },
+
+  {
+    "id": "giant_head",
+    "name": "Giant Head",
+    "act": 3,
+    "type": "Elite",
+    "icon": "🗿",
+    "hp": "500-520",
+    "passives": "Slow: Each card played increases all damage dealt to him by 10% this turn. Turn 5+: Enters It Is Time (30-40+ dmg).",
+    "turnPattern": "Turns 1-4: Count 5, 4, 3, 2, 1 (dealing minor glare debuffs). Turn 5+: Heavy smashes increasing by 5 damage each round.",
+    "tips": "Play zero-cost skills and draws first to pump the Slow debuff to +50% or +80% before firing your big attacks."
+  },
+  {
+    "id": "nemesis",
+    "name": "Nemesis",
+    "act": 3,
+    "type": "Elite",
+    "icon": "☠️",
+    "hp": "185-200",
+    "passives": "Intangible: On alternating turns, gains Intangible (takes only 1 damage from all sources).",
+    "turnPattern": "Alternates: Intangible turn -> Vulnerable turn -> Intangible turn. Attacks for 6x3 or Scythe (45 dmg) + Burns.",
+    "tips": "Spend intangible turns cycling cards, applying block, and playing powers. Unleash full damage only when intangible drops."
+  },
+  {
+    "id": "reptomancer",
+    "name": "Reptomancer",
+    "act": 3,
+    "type": "Elite",
+    "icon": "🐍",
+    "hp": "180-200",
+    "passives": "Dagger Swarm: Continuously summons exploding daggers that charge and suicide-strike for 25 damage each.",
+    "turnPattern": "Turn 1: Summons 2 Daggers. Turn 2: Snake Strike (13x2 dmg) + summons more daggers. Turn 3: Daggers detonate for 25 each.",
+    "tips": "Kill the summoned daggers immediately every turn before they detonate. Frontloaded AoE or targeted high damage is required."
+  },
+  {
+    "id": "time_eater",
+    "name": "Time Eater",
+    "act": 3,
+    "type": "Boss",
+    "icon": "⏳",
+    "hp": "456-480",
+    "passives": "Time Warp: Playing 12 cards immediately ends your turn and permanently grants him +2 Strength. Cleanses at 50% HP.",
+    "turnPattern": "Attacks for multi-hits, inflicts Slimed/Vulnerable, and heals to 50% once dropped under half HP.",
+    "tips": "Count every card played. End your turn intentionally on card 11 rather than having card 12 force an awkward stop with unspent energy."
+  },
+  {
+    "id": "awakened_one",
+    "name": "Awakened One",
+    "act": 3,
+    "type": "Boss",
+    "icon": "🐦",
+    "hp": "300 Phase 1 / 300 Phase 2",
+    "passives": "Curiosity: Gains +1 (+2 on A19+) Strength every time you play a Power card in Phase 1.",
+    "turnPattern": "Phase 1: Slash (20 dmg) accompanied by 2 Cultists. Phase 2: Revives with full HP and unleashes Dark Echo (40 dmg AoE).",
+    "tips": "Only play game-winning scaling powers in Phase 1. Kill the Cultists immediately on turns 1-2 before their ritual strength spirals."
+  },
+  {
+    "id": "donu_deca",
+    "name": "Donu & Deca",
+    "act": 3,
+    "type": "Boss",
+    "icon": "🍩",
+    "hp": "250 each",
+    "passives": "Tag Team: Donu gives +3 Strength to both enemies; Deca grants Block and shuffles Dazed cards into your draw pile.",
+    "turnPattern": "Donu buffs on odd turns, attacks on even turns. Deca attacks on odd turns, shields on even turns.",
+    "tips": "Kill Donu FIRST! Donu's permanent strength scaling turns them into lethal juggernauts if left alive too long."
+  }
+]
