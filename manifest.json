@@ -6,7 +6,7 @@
     "slay-the-spire-2": [
       {
         "id": "deck-builder",
-        "title": "Deck & Synergy Planner",
+        "title": "Deck Builder",
         "description": "Interactive card library, archetype synergies, and starter deck planner for Slay the Spire 2.",
         "url": "https://rendomnet.github.io/kraken-tools/#/slay-the-spire-2/deck-builder",
         "image": "https://rendomnet.github.io/kraken-tools/icons/slay-the-spire-2/deck-builder.svg",
@@ -16,7 +16,7 @@
       },
       {
         "id": "relic-finder",
-        "title": "Relic Quick-Finder",
+        "title": "Relic Finder",
         "description": "Searchable relic compendium with character filters, rarity tiers, archetype synergy tags, and pin list.",
         "url": "https://rendomnet.github.io/kraken-tools/#/slay-the-spire-2/relic-finder",
         "image": "https://rendomnet.github.io/kraken-tools/icons/slay-the-spire-2/relic-finder.svg",
@@ -26,7 +26,7 @@
       },
       {
         "id": "boss-cheatsheet",
-        "title": "Boss & Elite Cheatsheet",
+        "title": "Boss Guide",
         "description": "Act-by-act survival guide with boss/elite HP, dangerous passive reactions, turn patterns, and target tracking.",
         "url": "https://rendomnet.github.io/kraken-tools/#/slay-the-spire-2/boss-cheatsheet",
         "image": "https://rendomnet.github.io/kraken-tools/icons/slay-the-spire-2/boss-cheatsheet.svg",
@@ -38,7 +38,7 @@
     "slay-the-spire": [
       {
         "id": "deck-builder",
-        "title": "Deck & Synergy Planner",
+        "title": "Deck Builder",
         "description": "Interactive card library, archetype synergies, and starter deck planner for Slay the Spire 2.",
         "url": "https://rendomnet.github.io/kraken-tools/#/slay-the-spire-2/deck-builder",
         "image": "https://rendomnet.github.io/kraken-tools/icons/slay-the-spire-2/deck-builder.svg",
@@ -48,7 +48,7 @@
       },
       {
         "id": "relic-finder",
-        "title": "Relic Quick-Finder",
+        "title": "Relic Finder",
         "description": "Searchable relic compendium with character filters, rarity tiers, archetype synergy tags, and pin list.",
         "url": "https://rendomnet.github.io/kraken-tools/#/slay-the-spire-2/relic-finder",
         "image": "https://rendomnet.github.io/kraken-tools/icons/slay-the-spire-2/relic-finder.svg",
@@ -58,7 +58,7 @@
       },
       {
         "id": "boss-cheatsheet",
-        "title": "Boss & Elite Cheatsheet",
+        "title": "Boss Guide",
         "description": "Act-by-act survival guide with boss/elite HP, dangerous passive reactions, turn patterns, and target tracking.",
         "url": "https://rendomnet.github.io/kraken-tools/#/slay-the-spire-2/boss-cheatsheet",
         "image": "https://rendomnet.github.io/kraken-tools/icons/slay-the-spire-2/boss-cheatsheet.svg",

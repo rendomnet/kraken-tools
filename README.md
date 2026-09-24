@@ -16,14 +16,14 @@ A collection of lightweight, server-hosted web tools and utilities built to inte
 
 ## Available Tools
 
-- **Slay the Spire 2 — Deck & Synergy Planner** (`#/slay-the-spire-2/deck-builder`):
+- **Slay the Spire 2 — Deck Builder** (`#/slay-the-spire-2/deck-builder`):
   - Interactive card catalog for Ironclad, Silent, and Necrobinder.
   - Deck builder with energy curve stats and attack/skill/power distribution.
   - Deck code export and import.
-- **Slay the Spire 2 — Relic Quick-Finder** (`#/slay-the-spire-2/relic-finder`):
+- **Slay the Spire 2 — Relic Finder** (`#/slay-the-spire-2/relic-finder`):
   - Searchable relic compendium with character filters, rarity tiers, and synergy tags.
   - Interactive pinned relics list with local persistence for quick mid-run tracking.
-- **Slay the Spire 2 — Boss & Elite Cheatsheet** (`#/slay-the-spire-2/boss-cheatsheet`):
+- **Slay the Spire 2 — Boss Guide** (`#/slay-the-spire-2/boss-cheatsheet`):
   - Act-by-act breakdown of Bosses and Elites with HP, dangerous passives (e.g. Enrage, Intangible, Split), and turn patterns.
   - Active target pinning to track current boss strategies and counters.
 

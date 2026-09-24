@@ -18,7 +18,7 @@
           <span class="text-[11px] font-bold uppercase tracking-widest text-primary">Slay the Spire 2</span>
           <span class="text-xs text-muted-foreground group-hover:text-primary transition-colors">Open →</span>
         </div>
-        <h2 class="font-title text-base font-bold">Deck & Synergy Planner</h2>
+        <h2 class="font-title text-base font-bold">Deck Builder</h2>
         <p class="text-xs text-muted-foreground leading-relaxed">
           Explore Ironclad, Silent, and Necrobinder cards, archetype synergies, and export deck codes.
         </p>
@@ -31,7 +31,7 @@
           <span class="text-[11px] font-bold uppercase tracking-widest text-amber-400">Slay the Spire 2</span>
           <span class="text-xs text-muted-foreground group-hover:text-amber-400 transition-colors">Open →</span>
         </div>
-        <h2 class="font-title text-base font-bold">Relic Quick-Finder</h2>
+        <h2 class="font-title text-base font-bold">Relic Finder</h2>
         <p class="text-xs text-muted-foreground leading-relaxed">
           Searchable relic compendium with character filters, rarity tiers, archetype synergy tags, and pin list.
         </p>
@@ -44,7 +44,7 @@
           <span class="text-[11px] font-bold uppercase tracking-widest text-rose-400">Slay the Spire 2</span>
           <span class="text-xs text-muted-foreground group-hover:text-rose-400 transition-colors">Open →</span>
         </div>
-        <h2 class="font-title text-base font-bold">Boss & Elite Cheatsheet</h2>
+        <h2 class="font-title text-base font-bold">Boss Guide</h2>
         <p class="text-xs text-muted-foreground leading-relaxed">
           Act-by-act survival guide with boss/elite HP, dangerous passive reactions, turn patterns, and target tracking.
         </p>
