@@ -8,8 +8,8 @@ A collection of lightweight, server-hosted web tools and utilities built to inte
    - The master index mapping game identifiers (`slay-the-spire-2`, `world-of-warcraft`, etc.) to available tools.
    - Kraken fetches this file via jsDelivr CDN (`https://cdn.jsdelivr.net/gh/rendomnet/kraken-tools@main/manifest.json`) once on boot and caches it in memory.
 2. **Independent Deployment (GitHub Pages):**
-   - Each tool lives under `tools/<game-id>/<tool-name>/`.
-   - On git push to `main`, GitHub Actions automatically deploys the latest static tools to GitHub Pages.
+   - The repo is one Vue app. Each game's tools and data files live under `src/tools/<game-id>/`, served at `#/<game-id>/<tool-name>`.
+   - On git push to `main`, GitHub Actions builds the app and deploys it to GitHub Pages.
    - Tools can be updated or added at any time without releasing new versions of Kraken or resubmitting Chrome extension packages.
 3. **Embed Mode (`?embed=kraken`):**
    - When loaded inside Kraken's Game Details iframe, tools detect `?embed=kraken` to automatically hide external headers/footers and harmonize with Kraken's dark theme tokens.
@@ -30,8 +30,8 @@ A collection of lightweight, server-hosted web tools and utilities built to inte
 
 ## Adding a New Tool
 
-1. Create a new folder under `tools/<game-id>/<tool-name>/`.
-2. Add your static files (`index.html`, `style.css`, `app.js`). Support `?embed=kraken` if you want it cleanly embedded in the launcher.
+1. Add the tool component (and any data files) under `src/tools/<game-id>/`.
+2. Add its route `/<game-id>/<tool-name>` in `src/router/index.ts`. Use `useKrakenEmbed` so it embeds cleanly in the launcher.
 3. Register the tool entry in `manifest.json`.
 4. Open a pull request or push to `main`.
 
@@ -39,7 +39,7 @@ A collection of lightweight, server-hosted web tools and utilities built to inte
 
 Kraken shows each tool as an app icon (square plate, title below) on the game overview. Give each entry one or both of:
 
-- `image`: URL to square (1:1) artwork, e.g. `tools/<game-id>/<tool-name>/icon.png` served from GitHub Pages. It fills the plate edge to edge, so keep it square and legible at small sizes.
+- `image`: URL to square (1:1) artwork, e.g. `public/icons/<game-id>/<tool-name>.svg` served from GitHub Pages. It fills the plate edge to edge, so keep it square and legible at small sizes.
 - `icon`: a Kraken icon library name (e.g. `layers`, `magic-star`). Only names bundled in the installed Kraken version resolve.
 
 Kraken uses `image` first, then `icon`, then the first letter of `title`.
