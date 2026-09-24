@@ -27,3 +27,12 @@ A collection of lightweight, server-hosted web tools and utilities built to inte
 2. Add your static files (`index.html`, `style.css`, `app.js`). Support `?embed=kraken` if you want it cleanly embedded in the launcher.
 3. Register the tool entry in `manifest.json`.
 4. Open a pull request or push to `main`.
+
+## Tool Icons
+
+Kraken shows each tool as an app icon (square plate, title below) on the game overview. Give each entry one or both of:
+
+- `image`: URL to square (1:1) artwork, e.g. `tools/<game-id>/<tool-name>/icon.png` served from GitHub Pages. It fills the plate edge to edge, so keep it square and legible at small sizes.
+- `icon`: a Kraken icon library name (e.g. `layers`, `magic-star`). Only names bundled in the installed Kraken version resolve.
+
+Kraken uses `image` first, then `icon`, then the first letter of `title`.

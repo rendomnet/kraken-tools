@@ -9,7 +9,7 @@
         "title": "Deck & Synergy Planner",
         "description": "Interactive card library, archetype synergies, and starter deck planner for Slay the Spire 2.",
         "url": "https://rendomnet.github.io/kraken-tools/#/slay-the-spire-2/deck-builder",
-        "icon": "cards",
+        "icon": "layers",
         "author": "Kraken Team",
         "tags": ["deck-builder", "cards", "strategy"]
       }
@@ -20,7 +20,7 @@
         "title": "Deck & Synergy Planner",
         "description": "Interactive card library, archetype synergies, and starter deck planner for Slay the Spire 2.",
         "url": "https://rendomnet.github.io/kraken-tools/#/slay-the-spire-2/deck-builder",
-        "icon": "cards",
+        "icon": "layers",
         "author": "Kraken Team",
         "tags": ["deck-builder", "cards", "strategy"]
       }
@@ -31,7 +31,7 @@
         "title": "Talent Calculator",
         "description": "Class talent tree planner and build exporter.",
         "url": "https://rendomnet.github.io/kraken-tools/tools/world-of-warcraft/talents/",
-        "icon": "sparkles",
+        "icon": "magic-star",
         "author": "Kraken Team",
         "tags": ["talents", "calculator", "builds"]
       }
