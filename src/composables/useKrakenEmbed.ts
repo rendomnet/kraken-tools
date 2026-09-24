@@ -54,24 +54,19 @@ export function useKrakenEmbed() {
     }
   }
 
+  let lastSentHeight = 0;
+
   function sendHeight() {
     if (!isEmbedded.value) return;
     try {
-      const rootEl = document.querySelector('.deck-builder') || document.getElementById('app') || document.body;
-      const rectHeight = rootEl ? Math.ceil(rootEl.getBoundingClientRect().height) : 0;
-      const scrollH = Math.max(
-        document.documentElement.scrollHeight,
-        document.body ? document.body.scrollHeight : 0,
-      );
-      const offsetH = Math.max(
-        document.documentElement.offsetHeight,
-        document.body ? document.body.offsetHeight : 0,
-      );
-      const finalHeight = Math.max(rectHeight, scrollH, offsetH);
-      if (finalHeight > 0) {
+      const rootEl = (document.getElementById('app')?.firstElementChild || document.getElementById('app')) as HTMLElement | null;
+      if (!rootEl) return;
+      const rectHeight = Math.ceil(rootEl.offsetHeight || rootEl.getBoundingClientRect().height);
+      if (rectHeight > 0 && Math.abs(rectHeight - lastSentHeight) >= 8) {
+        lastSentHeight = rectHeight;
         window.parent.postMessage({
           type: 'KRAKEN_RESIZE',
-          height: finalHeight + 60,
+          height: rectHeight,
         }, '*');
       }
     } catch (e) {}
@@ -124,11 +119,10 @@ export function useKrakenEmbed() {
       resizeObserver = new ResizeObserver(() => {
         sendHeight();
       });
-      if (document.body) {
-        resizeObserver.observe(document.body);
-      }
       const appEl = document.getElementById('app');
-      if (appEl) {
+      if (appEl?.firstElementChild) {
+        resizeObserver.observe(appEl.firstElementChild);
+      } else if (appEl) {
         resizeObserver.observe(appEl);
       }
       // Send initial height after paint
