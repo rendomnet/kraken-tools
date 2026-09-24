@@ -1,5 +1,5 @@
 <template>
-  <div class="deck-builder flex flex-col w-full text-foreground font-sans p-4 md:p-6" :class="isEmbedded ? 'p-1 md:p-2 min-h-0' : 'min-h-screen'">
+  <div class="deck-builder flex flex-col w-full text-foreground font-sans" :class="isEmbedded ? 'p-0 min-h-0' : 'p-4 md:p-6 min-h-screen'">
     <!-- Standalone Header (Auto-hidden in Kraken embed mode) -->
     <header v-if="!isEmbedded" class="flex items-center justify-between pb-4 mb-4 border-b border-border">
       <div class="flex items-center gap-3">
