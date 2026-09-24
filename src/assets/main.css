@@ -59,13 +59,17 @@ body:not(.is-embedded) {
 html.is-embedded,
 html.is-embedded body,
 html.is-embedded #app,
+html.is-embedded #app > *,
 body.is-embedded,
-body.is-embedded #app {
+body.is-embedded #app,
+body.is-embedded #app > * {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
   min-height: auto !important;
   height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* Visually hide inner scrollbars without breaking height calculations or clipping */
